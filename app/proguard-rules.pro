@@ -44,6 +44,7 @@
 -keepclasseswithmembers class ai.toktoktok.sdk.TokTokTok {
   public static *** init(***);
   public static *** setBottomMenuDialogVisible(***);
+  public static *** setCustomFabIconResourceId(***);
   public static *** show(***);
   public static *** setToktoktokListener(***);
 }

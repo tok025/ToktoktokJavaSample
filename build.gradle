@@ -24,7 +24,7 @@ allprojects {
             url = uri("https://maven.pkg.github.com/tok025/ToktoktokSDK")
             credentials {
                 username = 'tok025Public'
-                password = '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'
+                password = '톡톡톡 가이드 내 키값 참조'
             }
         }
     }
