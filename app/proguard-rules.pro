@@ -42,14 +42,21 @@
 #-renamesourcefileattribute SourceFile
 #================== TokTokTok Proguard for Release 적용 코드 시작 ==================
 -keepclasseswithmembers class ai.toktoktok.sdk.TokTokTok {
-  public static *** init(***);
-  public static *** setBottomMenuDialogVisible(***);
-  public static *** setCustomFabIconResourceId(***);
-  public static *** show(***);
-  public static *** setToktoktokListener(***);
+    public static *** init(***);
+    public static *** setBottomMenuDialogVisible(***);
+    public static *** setCustomFabIconResourceId(***);
+    public static *** setAnimationEnabled(***);
+    public static *** startFabAnimation(***, ***);
+    public static *** stopFabAnimation();
+    public static *** show(***, ***);
+    public static *** setToktoktokListener(***);
 }
 
 -keep interface ai.toktoktok.sdk.TokTokTok$TokTokTokListener{*;}
+
+-keepclasseswithmembers class ai.toktoktok.sdk.TokTokTokFloatingActionButton {
+    public <init>(...);
+}
 
 -keepclasseswithmembers class ai.toktoktok.sdk.LogUtils {
     public static *** d(***);
