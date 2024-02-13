@@ -63,12 +63,12 @@ public class ProgrammaticMainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        TokTokTok.startFabAnimation(this, fabTokTokTok);
+        fabTokTokTok.startFabAnimation();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        TokTokTok.stopFabAnimation();
+        fabTokTokTok.stopFabAnimation();
     }
 }

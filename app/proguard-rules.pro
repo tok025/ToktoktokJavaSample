@@ -44,10 +44,6 @@
 -keepclasseswithmembers class ai.toktoktok.sdk.TokTokTok {
     public static *** init(***);
     public static *** setBottomMenuDialogVisible(***);
-    public static *** setCustomFabIconResourceId(***);
-    public static *** setAnimationEnabled(***);
-    public static *** startFabAnimation(***, ***);
-    public static *** stopFabAnimation();
     public static *** show(***, ***);
     public static *** setToktoktokListener(***);
 }
@@ -56,6 +52,10 @@
 
 -keepclasseswithmembers class ai.toktoktok.sdk.TokTokTokFloatingActionButton {
     public <init>(...);
+    public *** setCustomFabIconResourceId(***);
+    public *** setAnimationEnabled(***);
+    public *** startFabAnimation();
+    public *** stopFabAnimation();
 }
 
 -keepclasseswithmembers class ai.toktoktok.sdk.LogUtils {
